@@ -1,2 +1,2 @@
-# pense-em-python
-Minha leitura do livro Pense em Python
+# ThinkPython
+My book reading Think Python
