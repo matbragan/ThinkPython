@@ -11,17 +11,18 @@ def factorial(n):
         print('Factorial is not defined for negative integers.')
         return None
     else:
-        space = ' ' * (4*n)
-        print(space, 'factorial', n)
+        # space = ' ' * (4*n)
+        # print(space, 'factorial', n)
         result = n * factorial(n-1) if n > 0 else 1
-        print(space, 'returning', result)
+        # print(space, 'returning', result)
         return result
 
-a = input('Enter a number for calculation your factorial ')
+if __name__ == '__main__':
+    a = input('Enter a number for calculation your factorial ')
 
-try:
-    a = int(a)
-except:
-    pass
+    try:
+        a = int(a)
+    except:
+        pass
 
-print(factorial(a))
+    print(factorial(a))
