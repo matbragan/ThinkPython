@@ -1,9 +1,19 @@
-def square(a, x):
-    while True:
-        print(x)
-        y = (x + a/x) / 2
-        if x == y:
-            break
-        x = y
+def letters(string):
+    for l in string:
+        print(l)
 
-square(25, 98)
+def invert_letters(string):
+    i = 1
+    while i <= len(string):
+        letter = string[-i]
+        print(letter)
+        i += 1
+
+def ducklings():
+    prefixes = 'JKLMNOPQ'
+    suffix = 'ack'
+
+    for l in prefixes:
+        print(l + suffix) if l not in ['O', 'Q'] else print(l + 'u' + suffix)
+
+print('banana'[:])
