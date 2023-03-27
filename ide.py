@@ -1,19 +1,8 @@
-def letters(string):
-    for l in string:
-        print(l)
+def in_both(word1, word2):
+    for l in word1:
+        if l in word2:
+            print(l)
 
-def invert_letters(string):
-    i = 1
-    while i <= len(string):
-        letter = string[-i]
-        print(letter)
-        i += 1
+in_both('Pinguito', 'Pantera')
 
-def ducklings():
-    prefixes = 'JKLMNOPQ'
-    suffix = 'ack'
-
-    for l in prefixes:
-        print(l + suffix) if l not in ['O', 'Q'] else print(l + 'u' + suffix)
-
-print('banana'[:])
+print(' Pinguito'.strip('toi'))
