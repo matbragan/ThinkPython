@@ -1,4 +1,4 @@
-fin = open('chapter9/words.txt')
+fin = open('words.txt')
 
 def twenty_letters_more():
     for line in fin:
@@ -17,4 +17,11 @@ def has_no_e():
             no_e +=  1
     print(no_e/total*100)
 
-has_no_e()
+def avoids(word, forbidden):
+    for letter in word:
+        if letter in forbidden:
+            return False
+    return True
+
+
+print(avoids('Matheus', ['g', 'a']))
