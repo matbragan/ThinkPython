@@ -8,11 +8,19 @@ def histogram(s):
             d[c] += 1
     return d
 
-# def invert_dict(d):
-#     inverse = {}
-#     for key in d:
-        
+def invert_dict(d):
+    inverse = dict()
+    for k in d:
+        val = d[k]
+        if val not in inverse:
+            inverse[val] = [k]
+        else:
+            inverse[val].append(k)
+    return inverse
 
-h = histogram('Pinguito & Pantera')
-print(h)
-print(invert_dict(h))
+if __name__ == '__main__':
+
+    h = histogram('Paralelepipedo')
+
+    print(h)
+    print(invert_dict(h))
